@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": [ "cypress" ]
+  },
+  "files": [
+    "./src/main.ts",
+    "./src/polyfills.ts"
+  ],
+  "include": [
+    "**/*.cy-spec.ts"
+  ]
+}
